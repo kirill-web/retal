@@ -1,0 +1,22 @@
+.info-sec {
+	&__descr {
+		&--big {
+			margin-top: 55px;
+			margin-bottom: 32px;
+			font-size: 30px;
+		}
+	}
+}
+
+.eservices-bg {
+	background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(../img/Main_Banner_img-Eserv.jpg);
+		min-height: 370px;
+}
+
+.eservices-sec {
+	.custcare__btn {
+		margin-bottom: 80px;
+	}
+}

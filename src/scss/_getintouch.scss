@@ -1,0 +1,15 @@
+.getintouch {
+	padding-top: 135px;
+	padding-bottom: 70px;
+	&__title {
+		font-size: 30px;
+		margin-bottom: 40px;
+		margin-top: 0;
+	}
+	&__map {
+		min-height: 700px;
+	}
+	.our-loc--mini {
+		display: none;
+	}
+}

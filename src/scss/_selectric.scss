@@ -1,0 +1,283 @@
+/*======================================
+  Selectric v1.9.6
+======================================*/
+
+.selectric-wrapper.selectric-simple-select {
+	background-color: $white-color;
+	border-radius: 5px;
+}
+
+.selectric-simple-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin-right: 10px;
+	outline: 0;
+	border: 0;
+	font-size: 14px;
+	background-color: $white-color;
+	color: $gray-text-color;
+	width: 100%;
+	height: 49px;
+}
+
+.selectric-reserve-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 20px;
+	width: 100%;
+	border-bottom: 1px solid $gray-text-color;
+}
+
+.selectric-simple-select .selectric-responsive {
+	width: 100%;
+}
+
+.selectric-simple-select .selectric {
+	background: transparent;
+	position: relative;
+	padding: 15px;
+	padding-right: 45px;
+}
+
+.selectric-reserve-select .selectric {
+	padding: 8px 5px;
+	position: relative;
+	&:after {
+		content: '';
+		background-repeat: no-repeat;
+		position: absolute;
+		background-image: url(../img/main-arrow.svg);
+		width: 7px;
+		height: 10px;
+		top: 15px;
+		right: 5px;
+	}
+}
+
+.selectric-simple-select .label {
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	font-size: 14px;
+	color: $gray-text-color;
+}
+
+.selectric-reserve-select .label {
+	padding: 0;
+	margin: 0;
+}
+
+//.selectric-simple-select .label:hover {
+//	color: #d21717;
+//	border-bottom: 1px dotted #d21717;
+//}
+.selectric-simple-select .button {
+	display: none;
+	position: absolute;
+	right: 2px;
+	top: 8px;
+	width: 28px;
+	height: 28px;
+	color: #2d659d;
+	text-align: center;
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.selectric-simple-select .button:after {
+	display: none;
+	content: '\e808';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 10px;
+	height: 10px;
+	font-size: 16px;
+}
+
+//.selectric-simple-select .label:hover + .button:after {
+//	color: #d21717;
+//}
+.selectric-reserve-select.selectric-open {
+	position: relative;
+}
+.selectric-reserve-select.selectric-open .selectric:after {
+	transform: rotate(90deg);
+}
+.selectric-reserve-select.selectric-open .selectric-items {
+	top: calc(100% + 1px);
+}
+.selectric-open {
+	z-index: 9999;
+}
+
+.selectric-simple-select.selectric-open .selectric {
+	//	background-color: #f7f8f9;
+	//	box-shadow: 0 0 20px 4px #cddbe8;
+	//  border-top-left-radius: 4px;
+	//	border-top-right-radius: 4px;
+	//	min-width: 145px;
+}
+
+.selectric-simple-select.selectric-open .label {
+	//	border-bottom: 1px dotted transparent;
+	//	min-width: 145px;
+}
+
+.selectric-open .selectric-items {
+	display: block;
+	width: 100%;
+}
+
+.selectric-simple-select.selectric-open .button:after {
+	transform: rotate(-180deg);
+	top: 10px;
+}
+
+.selectric-disabled {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.selectric-hide-select {
+	position: relative;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+.selectric-hide-select select {
+	position: absolute;
+	left: -100%;
+	display: none;
+}
+
+.selectric-input {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
+	outline: none !important;
+	border: none !important;
+	*font: 0/0 a !important;
+	background: none !important;
+}
+
+.selectric-temp-show {
+	position: absolute !important;
+	visibility: hidden !important;
+	display: block !important;
+}
+
+
+/* Items box */
+
+.selectric-items {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+//.selectric-reserve-select .selectric-items {
+//	left: 15px;
+//}
+
+.selectric-items .selectric-scroll {
+	height: 100%;
+	overflow: auto;
+}
+
+.selectric-above .selectric-items {
+	top: auto;
+	bottom: 100%;
+}
+
+.selectric-items ul,
+.selectric-items li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.selectric-reserve-select .selectric-items li {
+	background-color: #f7f7f7;
+	padding: 18px 0;
+	padding-left: 18px;
+	color: $gray-text-color;
+	font-size: 20px;
+}
+
+.selectric-simple-select .selectric-items li {
+	display: block;
+	font-size: 14px;
+	color: $nav-color;
+	padding: 21px 14px;
+	background-color: $gray-heads-color;
+	border-bottom: 1px solid $gray-text-color;
+	&:hover {
+		text-decoration: none;
+		color: $main-color;
+	}
+	cursor: pointer;
+}
+
+.selectric-items .disabled {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	cursor: default !important;
+	background: none !important;
+	color: #666 !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.selectric-items .selectric-group .selectric-group-label {
+	font-weight: bold;
+	padding-left: 10px;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: none;
+	color: #444;
+}
+
+.selectric-items .selectric-group.disabled li {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.selectric-items .selectric-group li {
+	padding-left: 25px;
+}

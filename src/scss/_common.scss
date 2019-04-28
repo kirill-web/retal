@@ -1,0 +1,58 @@
+// Vars 
+
+$black-color: #000;
+$white-color: #fff;
+$main-color: #8b634b;
+$gray-text-color: #626262;
+$gray-heads-color: #2d2d2d;
+$nav-color: #d5c2b8;
+$search-color: #bea495;
+$wrong-color: #921818;
+
+
+
+// Fonts 
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@font-face {
+	font-family: 'Optima';
+	src: url('../fonts/optima.etf'),
+			 url('../fonts/optima.ttf') format('truetype'),
+			 url('../fonts/optima.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Optima', sans-serif;
+	overflow-x: hidden;
+}
+
+.no-margin {
+	margin: 0;	
+}
+
+h1,h2,h3,h4 {
+	color: $gray-heads-color;
+}
+
+p {
+	color: $gray-text-color;
+}
+
+select::-ms-expand {
+  display: none;
+	width: 0;
+	height: 0;
+}
+
+input::-ms-clear {
+  display: none;
+	width: 0;
+	height: 0;
+}

@@ -1,0 +1,23 @@
+.myretal {
+	&__bg {
+		background-image: url(../img/main-banner-retal.jpg);
+	}
+	&__title {
+		margin-top: 0;
+		margin-bottom: 100px;
+	}
+}
+
+.myretal-images {
+	display: block;
+	margin-bottom: 70px;
+	[class*="col"] {
+		padding: 0;
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 700px;
+	}
+}

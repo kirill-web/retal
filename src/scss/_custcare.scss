@@ -1,0 +1,79 @@
+.custcare {
+	&__bg {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(../img/Main_Banner_custcare.jpg);
+		min-height: 370px;
+	}
+	&__title {
+		font-weight: 400;
+		font-size: 30px;
+		margin-top: 55px;
+		margin-bottom: 32px;
+		color: $gray-text-color;
+	}
+	&__descr {
+		font-weight: 400;
+		font-size: 20px;
+		margin-top: 0;
+		margin-bottom: 55px;
+	}
+	&__btn {
+		display: inline-block;
+		height: 42px;
+		text-decoration: none;
+		color: $white-color;
+		padding: 11px 24px;
+		font-size: 16px;
+		border-radius: 5px;
+		background-color: $gray-heads-color;
+		margin-bottom: 24px;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $white-color;
+		}
+	}
+}
+
+.custcare-mini {
+	padding-top: 50px;
+	padding-bottom: 65px;
+	&__info {
+		padding-top: 93px;
+		padding-left: 73px;
+	}
+	&__title {
+		font-size: 30px;
+		font-weight: 400;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	&__descr {
+		font-size: 20px;
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+	&__link {
+		font-size: 20px;
+		text-decoration: none;
+		color: $main-color;
+		&:hover {
+			text-decoration: none;
+			color: $gray-heads-color;
+		}
+	}
+	&__wrap {
+		overflow: hidden;
+	}
+	&__img {
+		display: block;
+		height: auto;
+		width: 100%;
+		min-height: 320px;
+		transition: transform 0.7s;
+		&:hover {
+			transform: scale(1.06);
+		}
+	}
+}

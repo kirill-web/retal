@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Retal---Website-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Our-Developments---Residential---hover-open" transform="translate(-131.000000, -898.000000)">
+            <g id="Group-15" transform="translate(86.000000, 899.000000)">
+                <g id="arrow" transform="translate(46.000000, 0.000000)">
+                    <ellipse id="Oval-40" stroke="#FFFFFF" stroke-width="0.65" cx="11" cy="11" rx="11" ry="11"></ellipse>
+                    <g id="Group-3" transform="translate(5.947434, 6.217391)" fill="#FFFFFF">
+                        <polygon id="Shape" transform="translate(8.299679, 4.782609) scale(-1, 1) translate(-8.299679, -4.782609) " points="11.1475436 0.640958868 10.5081333 0 5.45181477 4.78245392 10.5081333 9.56521739 11.1475436 8.92412955 6.76944128 4.78245392"></polygon>
+                        <rect id="Rectangle-636" x="0" y="4.30434783" width="9.91239049" height="0.956521739"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
